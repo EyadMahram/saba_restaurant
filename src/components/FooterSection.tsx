@@ -17,7 +17,13 @@ const FooterSection = () => {
           <div>
             <h4 className="text-xs tracking-[0.3em] uppercase text-primary mb-6">Hours</h4>
             <div className="space-y-3 text-sm text-muted-foreground font-light">
-              <p>Everyday: 13:00 – 22:00</p>
+              <p>Monday: 13:00 – 22:00</p>
+              <p>Tuesday: 13:00 – 22:00</p>
+              <p>Wednesday: 13:00 – 22:00</p>
+              <p>Thursday: 13:00 – 22:00</p>
+              <p>Friday: 13:00 – 22:00</p>
+              <p>Saturday: 13:00 – 22:00</p>
+              <p>Sunday: 13:00 – 22:00</p>
             </div>
           </div>
 
