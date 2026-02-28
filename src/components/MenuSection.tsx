@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { QamariyaCorner, QamariyaBorder, QamariyaDivider, ArchMotif } from "@/components/YemeniMotifs";
 
 const categories = ["Starters", "Mains", "Desserts", "Drinks"] as const;
 type Category = (typeof categories)[number];
@@ -84,7 +85,7 @@ const MenuSection = () => {
         >
           <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Curated for You</p>
           <h2 className="font-display text-4xl sm:text-5xl tracking-wider mb-6">Our Menu</h2>
-          <div className="gold-line mx-auto" />
+          <QamariyaDivider />
         </motion.div>
 
         {/* Book */}
@@ -106,11 +107,22 @@ const MenuSection = () => {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="bg-card/80 backdrop-blur-sm border border-border/20 p-8 sm:p-12"
+                className="relative bg-card/80 backdrop-blur-sm border border-border/20 p-8 sm:p-12"
                 style={{ transformStyle: "preserve-3d" }}
               >
+                {/* Qamariya corner ornaments */}
+                <QamariyaCorner className="absolute top-3 left-3" />
+                <QamariyaCorner className="absolute top-3 right-3" flip />
+                <QamariyaCorner className="absolute bottom-3 left-3 rotate-90" />
+                <QamariyaCorner className="absolute bottom-3 right-3 rotate-90" flip />
+
+                {/* Arch motif behind chapter title */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 opacity-40">
+                  <ArchMotif />
+                </div>
+
                 {/* Page header */}
-                <div className="flex items-center justify-between mb-10">
+                <div className="flex items-center justify-between mb-8 relative">
                   <div>
                     <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-1">
                       Chapter {pageIndex + 1}
@@ -124,7 +136,8 @@ const MenuSection = () => {
                   </div>
                 </div>
 
-                <div className="gold-line-wide mb-8" />
+                {/* Yemeni geometric border divider */}
+                <QamariyaBorder className="mb-8" />
 
                 {/* Menu items */}
                 <div className="space-y-6">
@@ -160,8 +173,9 @@ const MenuSection = () => {
                   ))}
                 </div>
 
-                {/* Page number at bottom */}
-                <div className="mt-10 flex justify-center">
+                {/* Bottom border + page number */}
+                <QamariyaBorder className="mt-8 mb-4" />
+                <div className="flex justify-center">
                   <span className="text-xs text-muted-foreground/50 tracking-[0.3em] font-display italic">
                     — {pageIndex + 1} of {categories.length} —
                   </span>

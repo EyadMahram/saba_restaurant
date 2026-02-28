@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
+import { QamariyaBorder, QamariyaDivider } from "@/components/YemeniMotifs";
 
 const FooterSection = () => {
   return (
@@ -31,7 +32,8 @@ const FooterSection = () => {
           </div>
         </div>
 
-        <div className="gold-line-wide mb-8" />
+        <QamariyaBorder className="mb-6" />
+        <QamariyaDivider className="mb-6" />
         <p className="text-center text-xs text-muted-foreground tracking-[0.2em]">
           © 2026 LUMIÈRE. All rights reserved.
         </p>
