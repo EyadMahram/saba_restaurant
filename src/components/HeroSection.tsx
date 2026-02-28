@@ -10,11 +10,11 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Elegant fine dining restaurant interior with candlelight"
+          alt="Old City of Sana'a, Yemen — UNESCO World Heritage Site"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-black/30 to-transparent" />
       </div>
 
       {/* Subtle qamariya stars in corners */}
@@ -30,15 +30,18 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <QamariyaDivider className="mb-8" />
+          <p className="arabic-text text-2xl sm:text-3xl text-primary/50 mb-2 tracking-widest">
+            مطعم سبأ
+          </p>
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wider mb-6 gold-gradient-text">
-            LUMIÈRE
+            SABA
           </h1>
-          <p className="font-body text-lg sm:text-xl text-muted-foreground tracking-[0.3em] uppercase mb-4">
-            Fine Dining Experience
+          <p className="font-body text-lg sm:text-xl text-white/90 tracking-[0.3em] uppercase mb-4">
+            Authentic Yemeni Cuisine
           </p>
           <QamariyaDivider className="mt-8 mb-10" />
-          <p className="font-body text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
-            Where culinary artistry meets timeless elegance. Each dish is a journey, each moment unforgettable.
+          <p className="font-body text-base text-white/75 max-w-lg mx-auto leading-relaxed font-light">
+            A celebration of Yemen's ancient culinary heritage. From the highlands of Sana'a to the shores of Aden — every dish tells a story carried across centuries.
           </p>
         </motion.div>
 
@@ -47,7 +50,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="inline-flex flex-col items-center mt-16 text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+          className="inline-flex flex-col items-center mt-16 text-white/60 hover:text-primary transition-colors cursor-pointer"
         >
           <span className="text-xs tracking-[0.3em] uppercase mb-2">Explore</span>
           <motion.div

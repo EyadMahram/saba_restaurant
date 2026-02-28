@@ -15,28 +15,28 @@ interface MenuItem {
 
 const menuData: Record<Category, MenuItem[]> = {
   Starters: [
-    { name: "Seared Foie Gras", description: "Fig compote, brioche crumble, port reduction", price: "34", tag: "Signature" },
-    { name: "Tuna Tartare", description: "Avocado, sesame, yuzu vinaigrette, crispy wonton", price: "28" },
-    { name: "Burrata", description: "Heirloom tomatoes, basil oil, aged balsamic", price: "24" },
-    { name: "French Onion Soup", description: "Gruyère crouton, caramelized onions, thyme", price: "18" },
+    { name: "Saltah Soup",          description: "Traditional fenugreek stew, slow-braised lamb, fresh hilbeh foam, zhoug drizzle", price: "18", tag: "Signature" },
+    { name: "Mutabbaq",             description: "Crispy layered pastry, spiced minced lamb, spring onions, eggs, turmeric",        price: "16" },
+    { name: "Haradah",              description: "Fire-roasted tomato and chili relish, toasted cumin, warm khobz flatbread",       price: "12" },
+    { name: "Bint Al-Sahn Starter", description: "Warm pull-apart dough, wildflower honey, black seed, clarified butter",          price: "14" },
   ],
   Mains: [
-    { name: "Wagyu Beef Tenderloin", description: "Truffle jus, pomme purée, roasted bone marrow", price: "78", tag: "Chef's Choice" },
-    { name: "Pan-Seared Dover Sole", description: "Brown butter, capers, lemon, haricots verts", price: "62" },
-    { name: "Rack of Lamb", description: "Herb crust, ratatouille, rosemary jus", price: "58" },
-    { name: "Wild Mushroom Risotto", description: "Porcini, truffle oil, aged parmesan, microgreens", price: "42" },
+    { name: "Lamb Mandi",        description: "Pit-smoked whole lamb, fragrant basmati rice, Yemeni hawayej spice blend, raisins",   price: "52", tag: "Chef's Choice" },
+    { name: "Chicken Zurbian",   description: "Saffron-spiced layered rice, braised free-range chicken, caramelized onions, pine nuts", price: "38" },
+    { name: "Haneeth",           description: "Slow-roasted lamb shoulder, turmeric potatoes, garden greens, fresh zhoug sauce",    price: "46" },
+    { name: "Aseed with Lamb",   description: "Silky barley porridge, slow-braised lamb stew, clarified butter, cumin-scented broth", price: "34" },
   ],
   Desserts: [
-    { name: "Chocolate Sphere", description: "Warm ganache, gold leaf, salted caramel center", price: "22", tag: "Showpiece" },
-    { name: "Crème Brûlée", description: "Madagascar vanilla, caramelized sugar, fresh berries", price: "18" },
-    { name: "Tarte Tatin", description: "Caramelized apple, puff pastry, vanilla ice cream", price: "20" },
-    { name: "Cheese Selection", description: "Artisanal cheeses, honeycomb, fig chutney, crackers", price: "26" },
+    { name: "Bint Al-Sahn", description: "Layered honey cake, Sidr wildflower honey, black seed, warm clarified butter",            price: "16", tag: "Showpiece" },
+    { name: "Hareeseh",     description: "Semolina cake, date honey syrup, toasted almond, orange blossom water",                   price: "14" },
+    { name: "Asida",        description: "Traditional sweet porridge, aged date molasses, clarified butter, cinnamon dust",         price: "12" },
+    { name: "Sambosa",      description: "Crispy fried pastry pockets, sweet spiced cheese, cardamom honey dip",                    price: "13" },
   ],
   Drinks: [
-    { name: "Lumière Signature Cocktail", description: "Champagne, elderflower, gold flake, citrus", price: "24", tag: "House Special" },
-    { name: "Aged Negroni", description: "Barrel-aged gin, Campari, sweet vermouth", price: "20" },
-    { name: "Wine Pairing", description: "Sommelier-selected 4-course pairing", price: "85" },
-    { name: "Espresso Martini", description: "Cold brew, vodka, coffee liqueur, vanilla", price: "18" },
+    { name: "Qishr — Saba Blend", description: "Yemeni coffee-husk brew, fresh ginger, cardamom, cinnamon, honey",                 price: "9",  tag: "House Special" },
+    { name: "Chai Karak",         description: "Spiced loose-leaf tea, saffron, cardamom, rose water, condensed milk",              price: "8" },
+    { name: "Tamarind Cooler",    description: "House-made tamarind concentrate, fresh ginger, wildflower honey, sparkling water",  price: "10" },
+    { name: "Naqia",              description: "Chilled spring water infused with lemon verbena, fresh mint, and dried lime",       price: "7" },
   ],
 };
 
@@ -83,7 +83,7 @@ const MenuSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Curated for You</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">From the Ancient Kingdom</p>
           <h2 className="font-display text-4xl sm:text-5xl tracking-wider mb-6">Our Menu</h2>
           <QamariyaDivider />
         </motion.div>

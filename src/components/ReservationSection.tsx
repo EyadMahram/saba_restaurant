@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Users } from "lucide-react";
 import { toast } from "sonner";
 
-const timeSlots = ["6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM"];
+const timeSlots = ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30"];
 
 const ReservationSection = () => {
   const [name, setName] = useState("");
@@ -34,7 +34,7 @@ const ReservationSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Reserve Your Table</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Join Us at Saba</p>
           <h2 className="font-display text-4xl sm:text-5xl tracking-wider mb-6">Reservations</h2>
           <div className="gold-line mx-auto" />
         </motion.div>
