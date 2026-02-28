@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import heroImg from "@/assets/hero-restaurant.jpg";
+import { QamariyaDivider, QamariyaStar } from "@/components/YemeniMotifs";
 
 const HeroSection = () => {
   return (
@@ -16,6 +17,11 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
       </div>
 
+      {/* Subtle qamariya stars in corners */}
+      <QamariyaStar size={80} className="absolute top-24 left-8 opacity-30 hidden md:block" />
+      <QamariyaStar size={60} className="absolute top-32 right-12 opacity-20 hidden md:block" />
+      <QamariyaStar size={50} className="absolute bottom-32 left-16 opacity-15 hidden lg:block" />
+
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <motion.div
@@ -23,14 +29,14 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <div className="gold-line mx-auto mb-8" />
+          <QamariyaDivider className="mb-8" />
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wider mb-6 gold-gradient-text">
             LUMIÈRE
           </h1>
           <p className="font-body text-lg sm:text-xl text-muted-foreground tracking-[0.3em] uppercase mb-4">
             Fine Dining Experience
           </p>
-          <div className="gold-line mx-auto mt-8 mb-10" />
+          <QamariyaDivider className="mt-8 mb-10" />
           <p className="font-body text-base text-muted-foreground max-w-lg mx-auto leading-relaxed font-light">
             Where culinary artistry meets timeless elegance. Each dish is a journey, each moment unforgettable.
           </p>
