@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Users } from "lucide-react";
 import { toast } from "sonner";
 
-const timeSlots = ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30"];
+const timeSlots = ["6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM"];
 
 const ReservationSection = () => {
   const [name, setName] = useState("");
@@ -28,22 +28,22 @@ const ReservationSection = () => {
     <section id="reservations" className="py-28 px-6">
       <div className="max-w-3xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 80 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Join Us at Saba</p>
+          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Reserve Your Table</p>
           <h2 className="font-display text-4xl sm:text-5xl tracking-wider mb-6">Reservations</h2>
           <div className="gold-line mx-auto" />
         </motion.div>
 
         <motion.form
           onSubmit={handleSubmit}
-          initial={{ opacity: 0, y: 80 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="glass-card p-8 sm:p-12 space-y-8"
         >

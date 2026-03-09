@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
   { label: "Menu", href: "#menu" },
   { label: "Gallery", href: "#gallery" },
   { label: "Reservations", href: "#reservations" },
@@ -31,9 +30,8 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
-          <a href="#" className="font-display text-2xl tracking-wider gold-gradient-text flex flex-col leading-tight">
-            <span>SABA</span>
-            <span className="text-xs tracking-widest text-primary/60 arabic-text">مطعم سبأ</span>
+          <a href="#" className="font-display text-2xl tracking-wider gold-gradient-text">
+            LUMIÈRE
           </a>
 
           <div className="hidden md:flex items-center gap-10">
